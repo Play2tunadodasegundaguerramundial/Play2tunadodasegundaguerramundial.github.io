@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.header-1 {
+    background-color: rgb(40, 27, 114);
+    height: 100px;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+html, body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: rgb(20, 17, 17);
+    height: 100%;
+    overflow: -moz-hidden-unscrollable;
+}
+
+
+.header {
+    padding: 20px 0;
+}
+
+
+.logo {
+    margin-top: 10px;
+    width: 20%;
+}
+
+.menu {
+    margin-top: 40px;
+    width: 70%;
+    text-align: right;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.img {
+
+    text-align: left;
+    background: url(<img/FIFA-23-capa.jpg>), rgb(20, 17, 17) 50% / content-box;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+
+.img2 {
+    position: absolute;
+    opacity: 9;
+    top: 150px;
+    right: 5%;
+
+}
+
+.img3 {
+    position: absolute;
+    opacity: 9;
+    bottom: 10%;
+    right: 5%;
+
+}
+
+.inf {
+    margin-left: 5%;
+    margin-right: 55%;
+}
+
+.inf2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    opacity: 9;
+    top: 350px;
+    right: 10%;
+}
+.inf3 {
+    position: absolute;
+    opacity: 9;
+    bottom: 4%;
+    right: 5%;
+margin-left: 73%;
+}
