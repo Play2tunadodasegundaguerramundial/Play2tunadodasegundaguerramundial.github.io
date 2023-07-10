@@ -21,14 +21,11 @@ html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(20, 17, 17);
     height: 100%;
-    overflow: hidden;
 }
-
 
 .header {
     padding: 20px 0;
 }
-
 
 .logo {
     margin-top: 10px;
@@ -50,27 +47,28 @@ html, body {
 
 .h1 {
     margin: 10px;
-    left: 10%;
+    text-align: center;
+    color: azure;
 }
-.img{
-    position: absolute;
-    opacity: 9;
-    top: 30%;
-    left: 5%;
 
+.img {
+    width: 100%;
+    text-align: center;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
 }
 
 .inf {
-    position: absolute;
-    opacity: 9;
-    margin-left: 50%;
-    bottom: 40%;
+    text-align: center;
+    color: rgb(197, 197, 173);
+    padding: 20px;
 }
 
-.inf2{
-    position: absolute;
-    opacity: 9;
-    bottom: 15%;
-    right: 20%;
-
+.inf2 {
+    text-align: center;
+    color: green;
+    padding: 20px;
 }

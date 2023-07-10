@@ -1,9 +1,14 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(20, 17, 17);
+    height: 100%;
+}
 
 .header-1 {
     background-color: rgb(40, 27, 114);
@@ -12,102 +17,55 @@
 
 .center {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2%;
+    justify-content: space-between;
+    align-items: center;
 }
-
-html, body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    background-color: rgb(20, 17, 17);
-    height: 100%;
-    overflow: hidden;
-}
-
-
-.header {
-    padding: 20px 0;
-}
-
 
 .logo {
     margin-top: 10px;
-    width: 20%;
 }
 
 .menu {
-    margin-top: 40px;
-    width: 70%;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .menu a {
-    color: black;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 
-.img {
-
-    text-align: left;
-    background: url(<img/FIFA-23-capa.jpg>), rgb(20, 17, 17) 50% / content-box;
-    margin-top: 50px;
-    margin-left: 5%;
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-.img2 {
-    position: absolute;
-    opacity: 9;
-    top: 150px;
-    right: 5%;
-
+.image-item {
+    position: relative;
+    overflow: hidden;
 }
 
-.img3 {
-    position: absolute;
-    opacity: 9;
-    bottom: 10%;
-    right: 5%;
-
+.image-item img {
+    width: 100%;
+    height: auto;
 }
 
-.inf {
-    margin-left: 5%;
-    margin-right: 55%;
-}
 
-.inf2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
-    opacity: 9;
-    top: 350px;
-    right: 10%;
-}
-.inf3 {
-    position: absolute;
-    opacity: 9;
-    bottom: 4%;
-    right: 5%;
-margin-left: 73%;
-}
 
-.img4{
-    position: absolute;
-    opacity: 9;
-    left: 50%;
-    bottom: 35%;
 
-}
-.img5{
-    position: absolute;
-    opacity: 9;
-    left: 50%;
-}
-.inf4{
-    position: absolute;
-    opacity: 9;
-    bottom: 2%;
-    left: 10%;
+
+@media (max-width: 768px) {
+    .center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        justify-content: center;
+        margin-top: 20px;
+    }
 }
